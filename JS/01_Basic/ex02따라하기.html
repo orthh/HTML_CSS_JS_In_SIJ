@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bodyTag">
+    <!-- 이모티콘 넣는 방법 : 윈도우 + . -->
+    <a href="#">안녕하세요!</a>
+    <br /><br />
+    <div>
+        <button id="btn1">변경하기✔</button>
+        <button id="btn2">되돌리기🤔</button>
+    </div>
+    <br />
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+    <h1>오늘은 4월 24일!</h1>
+    <p>월요일입니다. 한주 화이팅~ 🏃‍♂️🏃‍♀️</p>
+
+    <script>
+        const bodyTag = document.getElementById('bodyTag');
+        const btn1 = document.getElementById('btn1');
+        const btn2 = document.getElementById('btn2');
+        // 1. 첫번째 버튼 클릭 시
+        // 배경색 -> 검은색
+        // 글씨색 -> 흰색
+
+        btn1.addEventListener('click', () => {
+            bodyTag.style.backgroundColor = 'black';
+            bodyTag.style.color = 'white';
+        })
+
+        btn2.addEventListener('click', () => {
+            bodyTag.style.backgroundColor = 'white';
+            bodyTag.style.color = 'black';
+        })
+        
+    </script>
+</body>
+</html>
