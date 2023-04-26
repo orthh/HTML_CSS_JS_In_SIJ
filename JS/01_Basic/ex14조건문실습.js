@@ -5,17 +5,19 @@
 
 let inputColor = prompt("원하는 색상을 입력하세요");
 let body = document.querySelector("body");
+let result = "";
 switch (inputColor) {
-    case "빨강":
-        body.style.backgroundColor = "red";
-        break;
-    case "초록":
-        body.style.backgroundColor = "green";
-        break;
-    case "파랑":
-        body.style.backgroundColor = "blue";
-        break;
-    default:
-        alert("잘못 입력하셨습니다.")
-        break;
+  case "빨강":
+    result = "red";
+    break;
+  case "초록":
+    result = "green";
+    break;
+  case "파랑":
+    result = "blue";
+    break;
+  default:
+    alert("잘못 입력하셨습니다.");
+    break;
 }
+body.style.backgroundColor = result;
