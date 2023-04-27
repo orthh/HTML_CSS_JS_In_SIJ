@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* border-radius : 경계선을 둥글게 만들어주는 속성 */
+      /* border-(top/bottom)-(left/right)-radius : OO */
+      /* border-radius : 00 */
+      body {
+        /* body태그의 기본 margin 값은 8px 
+          => defalut 값  
+        */
+        margin: 0;
+      }
+      #box {
+        width: 6.25rem;
+        height: 6.25rem;
+        background-color: slateblue;
+        /* margin: 120px; */
+        margin-left: 10px;
+        margin-top: 0px;
+        /* border-radius */
+        /* 오른쪽 위쪽을 둥글게? */
+        border-top-right-radius: 20px;
+
+        /* 왼쪽 아래를 둥글게? */
+        border-bottom-left-radius: 60px;
+
+        /* 모든 방향을 둥글게? */
+        border-radius: 30px;
+
+        /* 동그라미 */
+        border-radius: 50px;
+        /* border-radius: 50%; */
+      }
+      #boxs {
+        margin-left: 50px;
+      }
+      #boxs div {
+        width: 100px;
+        height: 100px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+      /* #boxs div:nth-child(n) {
+        margin-left: calc(100 * n) + "px";
+      } */
+      #boxs div:first-child {
+        background-color: red;
+      }
+      #boxs div:nth-child(2) {
+        margin-left: 100px;
+        background-color: blue;
+      }
+      #boxs div:nth-child(3) {
+        margin-left: 200px;
+        background-color: green;
+      }
+      #boxs div:nth-child(4) {
+        margin-left: 300px;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">Content</div>
+
+    <h2>실습문제</h2>
+    <div id="boxs">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
