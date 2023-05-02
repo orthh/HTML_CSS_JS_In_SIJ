@@ -23,7 +23,9 @@
 
       // 3. -1 버튼 클릭 시 숫자 감소
       const decrease = () => {
-        if (spanVal.innerText > 0) spanVal.innerText--;
+        // if (spanVal.innerText > 0) spanVal.innerText--;
+        // 조건이 하나일 떄 : &&
+        spanVal.innerText > 0 && spanVal.innerText--;
       };
     </script>
   </body>

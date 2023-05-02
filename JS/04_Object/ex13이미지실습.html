@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image실습</title>
+  </head>
+  <body>
+    <img
+      id="mImg"
+      width="200"
+      height="200"
+      alt=""
+      src="https://cdn-pro-web-220-151.cdn-nhncommerce.com/shoptr2466_godomall_com/data/goods/18/12/52/1000000111/1000000111_main_041.jpg"
+    />
+    <br />
+    <button onclick="changeImgFunc()">이미지 변경</button>
+
+    <script>
+      let images = [
+        "https://cdn-pro-web-220-151.cdn-nhncommerce.com/shoptr2466_godomall_com/data/goods/18/12/52/1000000111/1000000111_main_041.jpg",
+        "https://i1.sndcdn.com/artworks-INUNGkM8WJBLLMUl-na88ZQ-t500x500.jpg",
+        "https://www.recipetineats.com/wp-content/uploads/2019/07/Grilled-Corn_0.jpg",
+      ];
+      let i = 0;
+      const changeImgFunc = () => {
+        document.getElementById("mImg").src = images[i++ % images.length];
+      };
+    </script>
+  </body>
+</html>
