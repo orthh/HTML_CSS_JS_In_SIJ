@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>callback practice</title>
+  </head>
+  <body>
+    <button>Click!</button>
+    <br />
+    <br />
+    <!-- 시간 정보가 출력될 공간 -->
+    <div id="container"></div>
+
+    <script>
+      // HTML 화면에 1초~10초까지 시간 정보가 출력
+      // let s = 0;
+      // let a = setInterval(() => {
+      //   console.log(++s);
+      //   s >= 10 && clearInterval(a);
+      // }, 1000);
+
+      let bbb = 0;
+
+      for (let i = 1; i <= 10; i++) {
+        setTimeout(() => {
+          document.querySelector("#container").innerHTML +=
+            ++bbb + "초" + "<br />";
+        }, i * 1000);
+      }
+
+      // 버튼 클릭시 'click'메시지 출력
+      document.querySelector("button").addEventListener("click", () => {
+        document.querySelector("#container").innerHTML += "Click" + "<br />";
+      });
+    </script>
+  </body>
+</html>

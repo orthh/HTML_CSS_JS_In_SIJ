@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <h1>🍠 Event 지정</h1>
+    <h1>🥔 Event 지정</h1>
+    <h1>🌽 Event 지정</h1>
+
+    <button>Change!</button>
+
+    <script>
+      // $(선택자).on(이벤트타입, 이벤트핸들러)
+
+      // 1. 버튼 클릭시 h1 색깔 파랑
+      $("button").on("click", () => {
+        $("h1").css("color", "blue");
+      });
+
+      // 2. mouse h1 에 들어갈 시 빨강색
+      // $("h1")
+      //   .on("mouseover", (event) => {
+      //     $(event.target).css("color", "red");
+      //   })
+      //   .on("mouseout", (event) => {
+      //     $(event.target).css("color", "black");
+      //   });
+      $("h1").on("mouseover", function () {
+        $(this).css("color", "red");
+        console.log(this);
+      });
+
+      // 3. 마우스나갈시 검정색으로 복구
+
+      $("h1").on("mouseout", (e) => {
+        $(e.target).css("color", "black");
+      });
+    </script>
+  </body>
+</html>
