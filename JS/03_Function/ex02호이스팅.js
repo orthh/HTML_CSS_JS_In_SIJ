@@ -26,3 +26,9 @@ const hoisting2 = function (val) {
   console.log(val, "함수 표현식");
 };
 hoisting2("아래");
+
+// hoisting3("위"); 에러
+const hoisting3 = function (val) {
+  console.log(val, "화살표함ㅂ수");
+};
+hoisting3("아래");

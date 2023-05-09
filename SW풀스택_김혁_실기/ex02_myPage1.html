@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./ex02_myJs1.js" defer></script>
+    <style>
+      ul {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+      ul li {
+        list-style: none;
+        width: 100px;
+        height: 100px;
+      }
+      li:nth-child(1) {
+        background-color: red;
+      }
+      li:nth-child(2) {
+        background-color: green;
+      }
+      li:nth-child(3) {
+        background-color: blue;
+      }
+      li:nth-child(4) {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <button onclick="move()">Margin이동!</button>
+    <button onclick="round()">Border-radius 효과주기!</button>
+  </body>
+</html>

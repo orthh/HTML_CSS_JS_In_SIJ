@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 300vh;
+      }
+      /* sticky */
+      /* 요소를 일반적인 문서 흐름에 따라 배치하고, 테이블 관련 요소를 포함해 가장
+        가까운, 스크롤되는 조상과, 표 관련 요소를 포함한 containing
+        block 을 기준으로 top,right,bottom,left 의 값에 따라  오프셋 적용
+      */
+      #sti {
+        position: sticky;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sti"></div>
+    <div></div>
+  </body>
+</html>
